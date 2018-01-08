@@ -46,6 +46,6 @@ object StockDao {
 
 List(1, 2, 3, 4, 5).filter(_ > 2)
 
-val a = 5, b = 4
+val (a, b) = (5, 4)
 val greater = if (5 > 3) println("5 is greater than 3") else b
 
