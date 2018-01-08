@@ -1,0 +1,11 @@
+---
+Big Data Training in 24 hours
+
+week 1:
+  - Familiarizing with Scala
+  - Scala Idioms
+    - Create methods with no side effects (Pure functions)
+    - Prefer Immutable Objects
+    - Think Expression oriented programming
+  - Pitfalls
+...
