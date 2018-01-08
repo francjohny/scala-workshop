@@ -49,3 +49,17 @@ List(1, 2, 3, 4, 5).filter(_ > 2)
 val (a, b) = (5, 4)
 val greater = if (5 > 3) println("5 is greater than 3") else b
 
+val i = 2
+
+val evenOrOdd = i match {
+  case 1 | 3 | 5 | 7 | 9 ⇒ println("odd")
+  case 2 | 4 | 6 | 8 | 10 ⇒ println("even")
+}
+
+val result = try {
+  "1".toInt
+} catch {
+  case _ ⇒ 0
+}
+
+
