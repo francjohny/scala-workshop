@@ -25,3 +25,41 @@ def derive(t: Tree, v: String): Tree = t match {
   case Var(n) if v == n => Const(1)
   case _ => Const(0)
 }
+
+def echoWhatYouGaveMe(x: Any): String = x match {
+
+  // constant patterns
+  case 0 ⇒ "Zero"
+  case true ⇒ "true"
+  case "hello" ⇒ "you said 'hello'"
+  case Nil ⇒ "an empty List"
+
+  // sequence patterns
+  case List(0, _, _) ⇒ "a 3-element list with 0 as first element"
+//  case List(1, _*) ⇒ "a list beginning with 1, having any number of elements"
+  case Vector(1, _*) ⇒ "a vector starting with 1, having any number of elements"
+//  case list @ List(1, _*) ⇒ s"trying to access $list"
+//  case list: List[x] ⇒ s"$list"
+  case 1 :: x ⇒ s"second elem of list: ${x.head}"
+  case Nil ⇒ "list is empty"
+
+  // tuples
+  case (a, b) ⇒ s"got $a and $b"
+  case (a, b, c) ⇒ s"got $a, $b, and $c"
+
+  // constructor patterns
+  case Person(first, "Alexander") ⇒ s"found an Alexander, first name = $first"
+  case Dog("Suka") ⇒ "found a dog named Suka"
+
+  // typed patterns
+  case s: String ⇒ s"you gave me this string: $s"
+  case a: Array[Int] ⇒ s"an array of int: ${a.mkString(",")}"
+
+  // the default wildcard pattern
+  case _ ⇒ "Unknown"
+}
+
+case class Person(first: String, last: String)
+case class Dog(name: String)
+
+echoWhatYouGaveMe(List(1, 2))
