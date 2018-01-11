@@ -4,4 +4,5 @@
   * 3. enums
   * 4. static members
   * 5. postfix and prefix operators ++, --
+  * 6. semicolons
   */

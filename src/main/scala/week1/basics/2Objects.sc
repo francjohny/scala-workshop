@@ -34,5 +34,5 @@ object Timer {
   }
 }
 
-def incr(i: Int): Unit = { i+1 }
+def incr(i: Int): Int = { i+1 } // without =, t’s a Unit-returning procedure; causes havoc
 
