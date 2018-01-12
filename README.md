@@ -15,3 +15,4 @@ interesting reads:
   - http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
   - http://twitter.github.io/scala_school/
   - http://www.scala-lang.org/
+  - http://docs.scala-lang.org/style/index.html
