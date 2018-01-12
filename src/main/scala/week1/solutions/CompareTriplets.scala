@@ -1,4 +1,4 @@
-package week1.pitfalls
+package week1.solutions
 
 /**
   * Sample Input
@@ -9,7 +9,7 @@ package week1.pitfalls
   * 1 1
   */
 
-object Solution {
+object CompareTriplets {
 
   def main(args: Array[String]): Unit = {
     val ints: List[Array[Int]] = io.Source.stdin.getLines().take(2).toList.map(_.split("[ ]").map(_.toInt))
