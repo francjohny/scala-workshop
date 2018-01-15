@@ -1,9 +1,9 @@
 // 1. know the total amount of the items that are checks
 case class Item(itemType: String, amount: Int)
-val items = List(Item("ERROR", 5), Item("CHECK", 2))
+val items = List(Item("ERROR", 5), Item("CHECK", 2), Item("CHECK", 6))
 val total = items.filter(_.itemType == "CHECK").map(_.amount).sum
 
-items.foldLeft(0)((total, item) =>
+items.foldRight(0)((item, total) =>
   if(item.itemType == "CHECK")
     total + item.amount
   else
@@ -28,6 +28,7 @@ items.foldLeft(0)((total, item) =>
 // 2. count freq of letters in set
 val input = Set(Set("a","b"),Set("b","c"))
 val output = Map("b" → 2, "a" → 1, "c" → 1)
+input.toSeq.flatten.groupBy(identity)
 input.toSeq.flatten.groupBy(identity).mapValues(_.size)
 
 // 3. merging maps

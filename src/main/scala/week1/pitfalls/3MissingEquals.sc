@@ -1,10 +1,10 @@
 object BadScala2 {
 
-  def myFavouriteLanguage1() = {
+  def myFavouriteLanguage1(): String = {
     "Scala"
   }
 
-  def myFavouriteLanguage2() {
+  def myFavouriteLanguage2(): Unit = {
     "Ruby"
   }
 
