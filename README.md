@@ -17,3 +17,4 @@ interesting reads:
   - http://www.scala-lang.org/
   - http://docs.scala-lang.org/style/index.html
   - https://www.scala-exercises.org
+  - http://eed3si9n.com/learning-scalaz/index.html
