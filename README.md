@@ -16,3 +16,4 @@ interesting reads:
   - http://twitter.github.io/scala_school/
   - http://www.scala-lang.org/
   - http://docs.scala-lang.org/style/index.html
+  - https://www.scala-exercises.org
