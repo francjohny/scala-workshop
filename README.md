@@ -18,3 +18,4 @@ interesting reads:
   - http://docs.scala-lang.org/style/index.html
   - https://www.scala-exercises.org
   - http://eed3si9n.com/learning-scalaz/index.html
+  - http://programmer.97things.oreilly.com/wiki/index.php/Contributions_Appearing_in_the_Book
